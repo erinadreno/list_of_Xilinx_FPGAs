@@ -3,6 +3,8 @@ List of Xilinx FPGAs
 
 This article contains general information about [field-programmable gate array](https://en.wikipedia.org/wiki/Field-programmable_gate_array "Field-programmable gate array") (FPGA) devices from [Xilinx](https://en.wikipedia.org/wiki/Xilinx "Xilinx"), based on official specifications.
 
+The credit goes to the origial authors of https://en.wikipedia.org/wiki/List_of_Xilinx_FPGAs, admin [Drmies](https://wikipediasucks.co/forum/viewtopic.php?t=454) excluded.
+
 Contents
 --------
 
@@ -24,7 +26,7 @@ Contents
 *   [9 Virtex-6](#Virtex-6)
 *   [10 Spartan-6](#Spartan-6)
 *   [11 7 Series](#7-Series)
-*   [12 UltraScale and UltraScale+](#UltraScale-and-UltraScale+)
+*   [12 UltraScale and UltraScale+](#UltraScale-and-UltraScale+-)
 *   [13 Versal](#Versal)
 *   [14 Alveo and Kria](#Alveo-and-Kria)
 *   [15 FPGAs without integrated CPUs\[86\]](#FPGAs-without-integrated-CPUs-[86])
