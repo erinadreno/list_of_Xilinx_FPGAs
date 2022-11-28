@@ -373,7 +373,7 @@ The model name of most devices has some indication of its size, but the exact sc
 					class=reference><a href=#cite_note-18>[18]</a></sup>
 		</tr>
 		<tr>
-			<td rowspan=5><a href=#Virtex,_Spartan-II>Virtex</a>
+			<td rowspan=5><a href=#Virtex-Spartan-II>Virtex</a>
 			</td>
 			<td>Virtex
 			</td>
