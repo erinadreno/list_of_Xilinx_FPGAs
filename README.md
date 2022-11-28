@@ -16,7 +16,7 @@ Contents
     *   [3.4 XC5200](#XC5200)
     *   [3.5 XC6200](#XC6200)
     *   [3.6 XC8100](#XC8100)
-*   [4 Virtex, Spartan-II](#Virtex/,-Spartan/-II)
+*   [4 Virtex, Spartan-II](#Virtex,-Spartan\-II)
 *   [5 Virtex-II](#Virtex-II)
 *   [6 Spartan-3](#Spartan-3)
 *   [7 Virtex-4](#Virtex-4)
