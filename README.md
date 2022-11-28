@@ -29,7 +29,7 @@ Contents
 *   [12 UltraScale and UltraScale+](#UltraScale-and-UltraScale) <!-- github does not like "+" in link for some reason -->
 *   [13 Versal](#Versal)
 *   [14 Alveo and Kria](#Alveo-and-Kria)
-*   [15 FPGAs without integrated CPUs\[86\]](#FPGAs-without-integrated-CPUs-[86])
+*   [15 FPGAs without integrated CPUs\[86\]](#FPGAs-without-integrated-CPUs-86)
     *   [15.1 Artix](#Artix)
     *   [15.2 Kintex](#Kintex)
 *   [16 References](#References)
