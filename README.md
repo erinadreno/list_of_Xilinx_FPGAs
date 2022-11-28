@@ -3469,7 +3469,7 @@ Note: for families other than Spartan-3, the CLB grid is irregular and includes 
 
 # Virtex-4 
 
-The Virtex-4 devices are made of[\[44\]](#cite_note-44)[\[45\]](#cite_note-45)
+The Virtex-4 devices are made of:[\[44\]](#cite_note-44)[\[45\]](#cite_note-45)
 
 *   CLBs (configurable logic blocks), almost unchanged from Spartan-3
 *   18kbit true dual port block RAMs, very similar to Spartan-3A DSP, but with some new capabilities:
@@ -3998,7 +3998,7 @@ Note: the CLB count for FX devices is no longer a simple columns×rows multiplic
 
 # Virtex-5 
 
-The Virtex-5 devices are made of[\[47\]](#cite_note-47)[\[48\]](#cite_note-48)
+The Virtex-5 devices are made of:[\[47\]](#cite_note-47)[\[48\]](#cite_note-48)
 
 *   CLBs (configurable logic blocks) with a new, 6-input-LUT based construction:
     *   every CLB is made of two SLICEs — either two SLICELs or one SLICEL and one SLICEMs; the exact proportion of SLICEMs in a device varies, but at least 50% of CLBs contain a SLICEM (with a higher proportion on DSP-heavy devices)
@@ -4955,7 +4955,7 @@ Note: the CLB count for FXT devices is no longer a simple columns×rows multipli
 
 # Virtex-6 
 
-The Virtex-6 devices are made of[\[52\]](#cite_note-52)
+The Virtex-6 devices are made of:[\[52\]](#cite_note-52)
 
 *   CLBs (configurable logic blocks)[\[53\]](#cite_note-53) like the Virtex-5 CLBs, with some minor modifications:
     *   every SLICE now contains 8 flip-flops (two for each 6-LUT) instead of 4
@@ -5520,7 +5520,7 @@ Note: The CXT devices use an identical die to the corresponding LXT devices, but
 
 # Spartan-6 
 
-The Spartan-6 devices are basically Spartan-3A DSP devices upgraded with some Virtex-6 technology. They are made of[\[59\]](#cite_note-59)
+The Spartan-6 devices are basically Spartan-3A DSP devices upgraded with some Virtex-6 technology. They are made of:[\[59\]](#cite_note-59)
 
 *   CLBs (configurable logic blocks),[\[60\]](#cite_note-60) similar to Virtex-6, but with some changes:
     *   SLICEs now come in three types: SLICEX, SLICEL, SLICEM; SLICEX is a bare-bones version of SLICEL (wide LUT multiplexers and carry chain have been removed, only LUTs and flip-flops remain)
@@ -6020,7 +6020,7 @@ The Spartan-6 devices are basically Spartan-3A DSP devices upgraded with some Vi
 
 # 7 Series 
 
-The 7 series devices are made of[\[67\]](#cite_note-67)
+The 7 series devices are made of:[\[67\]](#cite_note-67)
 
 *   CLBs (configurable logic blocks), functionally identical to Virtex-6
 *   36kbit splittable true dual port block RAM, functionally identical to Virtex-6
@@ -7497,7 +7497,7 @@ Note: several devices have smaller max User I/Os count than the I/O bank count w
 
 # UltraScale and UltraScale+ 
 
-The UltraScale devices are made of[\[75\]](#cite_note-75)
+The UltraScale devices are made of:[\[75\]](#cite_note-75)
 
 *   CLBs (configurable logic blocks), which are a modified version of the 7 Series CLB:
     *   every CLB now contains exactly one SLICE, which can be a SLICEM or a SLICEL
@@ -10312,7 +10312,7 @@ Note: the clock region grid is irregular on some UltraScale+ devices because of 
 
 In 2018, Xilinx announced a product line called Versal.[\[78\]](#cite_note-78) Versal chips contain CPU, GPU, [DSP](https://en.wikipedia.org/wiki/Digital_signal_processor "Digital signal processor"), and FPGA components. Versal is fabricated using 7nm process technology.
 
-The Versal devices are made of[\[79\]](#cite_note-79)
+The Versal devices are made of:[\[79\]](#cite_note-79)
 
 *   PMC (Platform Management Controller), a [MicroBlaze](https://en.wikipedia.org/wiki/MicroBlaze "MicroBlaze")\-based processor block responsible for booting the device and monitoring its operations
 *   PS (Processing System), an ARM [system on a chip](https://en.wikipedia.org/wiki/System_on_a_chip "System on a chip") block with dual core [Cortex-A72](https://en.wikipedia.org/wiki/ARM_Cortex-A72 "ARM Cortex-A72") (APU) and dual-core [Cortex-R5F](https://en.wikipedia.org/wiki/ARM_Cortex-R "ARM Cortex-R") (RPU)
