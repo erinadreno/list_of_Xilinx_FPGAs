@@ -26,7 +26,7 @@ Contents
 *   [9 Virtex-6](#Virtex-6)
 *   [10 Spartan-6](#Spartan-6)
 *   [11 7 Series](#7-Series)
-*   [12 UltraScale and UltraScale+](#UltraScale-and-UltraScale)
+*   [12 UltraScale and UltraScale+](#UltraScale-and-UltraScale) <!-- github does not like "+" in link for some reason -->
 *   [13 Versal](#Versal)
 *   [14 Alveo and Kria](#Alveo-and-Kria)
 *   [15 FPGAs without integrated CPUs\[86\]](#FPGAs-without-integrated-CPUs-[86])
@@ -735,7 +735,7 @@ The model name of most devices has some indication of its size, but the exact sc
 				Kintex-7 FPGA on a single die
 		</tr>
 		<tr>
-			<td rowspan=3><a href=#UltraScale_and_UltraScale+>UltraScale</a>
+			<td rowspan=3><a href=#UltraScale-and-UltraScale>UltraScale</a>
 			</td>
 			<td>
 			</td>
@@ -767,7 +767,7 @@ The model name of most devices has some indication of its size, but the exact sc
 			<td>High-end parts
 		</tr>
 		<tr>
-			<td rowspan=9><a href=#UltraScale_and_UltraScale+>UltraScale+</a>
+			<td rowspan=9><a href=#UltraScale-and-UltraScale>UltraScale+</a>
 			</td>
 			<td>
 			</td>
