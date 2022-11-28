@@ -12071,7 +12071,7 @@ In addition to standalone FPGA chips, Xilinx also offers the Alveo product line 
 				</ul>
 </table>
 
-# FPGAs without integrated CPUs[\[86\]](#cite_note-:3-86)
+# FPGAs without integrated CPUs [\[86\]](#cite_note-:3-86)
 
 This list is [incomplete], but who the hell want to help WikiPedia when they removed this file?
 
