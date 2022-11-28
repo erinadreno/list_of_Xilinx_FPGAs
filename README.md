@@ -24,7 +24,7 @@ Contents
 *   [9 Virtex-6](#Virtex-6)
 *   [10 Spartan-6](#Spartan-6)
 *   [11 7 Series](#7-Series)
-*   [12 UltraScale and UltraScale+](#UltraScale-and-UltraScale+)
+*   [12 UltraScale and UltraScale+](#UltraScale-and-UltraScale-+)
 *   [13 Versal](#Versal)
 *   [14 Alveo and Kria](#Alveo-and-Kria)
 *   [15 FPGAs without integrated CPUs\[86\]](#FPGAs-without-integrated-CPUs-[86])
