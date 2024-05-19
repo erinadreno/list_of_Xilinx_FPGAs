@@ -1,0 +1,1 @@
+cat *.md > ../README.md
