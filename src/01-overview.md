@@ -438,7 +438,7 @@
 				integrated with an Artix-7 or a Kintex-7 FPGA on a single die
 		</tr>
 		<tr>
-			<td rowspan=3><a href=#UltraScale-and-UltraScale>UltraScale</a></td>
+			<td rowspan=3><a href=#UltraScale>UltraScale</a></td>
 			<td></td>
 			<td>2013<sup id=cite_ref-24 class=reference><a href=#cite_note-24>[24]</a></sup></td>
 			<td rowspan=3>20nm</td>
@@ -460,7 +460,7 @@
 			<td>High-end parts
 		</tr>
 		<tr>
-			<td rowspan=10><a href=#UltraScale-and-UltraScale>UltraScale+</a></td>
+			<td rowspan=10><a href=#UltraScale-plus>UltraScale+</a></td>
 			<td></td>
 			<td>2015</td>
 			<td rowspan=10>16nm</td>
