@@ -510,7 +510,7 @@ The model name of most devices has some indication of its size, but the exact sc
 				integrated with an Artix-7 or a Kintex-7 FPGA on a single die
 		</tr>
 		<tr>
-			<td rowspan=3><a href=#UltraScale-and-UltraScale>UltraScale</a></td>
+			<td rowspan=3><a href=#UltraScale>UltraScale</a></td>
 			<td></td>
 			<td>2013<sup id=cite_ref-24 class=reference><a href=#cite_note-24>[24]</a></sup></td>
 			<td rowspan=3>20nm</td>
@@ -532,7 +532,7 @@ The model name of most devices has some indication of its size, but the exact sc
 			<td>High-end parts
 		</tr>
 		<tr>
-			<td rowspan=10><a href=#UltraScale-and-UltraScale>UltraScale+</a></td>
+			<td rowspan=10><a href=#UltraScale-plus>UltraScale+</a></td>
 			<td></td>
 			<td>2015</td>
 			<td rowspan=10>16nm</td>
@@ -4761,7 +4761,9 @@ Note: the Artix-7 devices use the same PCI Express block as Kintex-7 devices, wi
 used in at most Gen2×4 configuration due to GTP transceiver limitations.
 
 Note: several devices have smaller max User I/Os count than the I/O bank count would imply. This means that the device
-is not available in any packaging that actually bonds out the complete set of pads.# UltraScale
+is not available in any packaging that actually bonds out the complete set of pads.
+
+# UltraScale
 
 The UltraScale devices are made of:[\[75\]](#cite_note-75)
 
@@ -5153,7 +5155,9 @@ encoding) and parallel width of 16, 32, 64, or 128 bits (20, 40, 80, or 160 bits
 			<td>a multi-die FPGA made of three dedicated die
 		</tr>
 	<tfoot>
-</table># UltraScale-plus
+</table>
+		
+# UltraScale-plus
 
 The UltraScale+ devices are functionally the same as UltraScale variants, with lipography changed from 20nm to 16nm FinFET. UltraScale+ also brings back Spartan, Artix, and Zynq families of products.
 
