@@ -59,7 +59,7 @@ converters](https://en.wikipedia.org/wiki/Analog-to-digital_converter "Analog-to
 (RF-DAC), for 5G applications
 * (MPSoC EV devices) a video codec unit (VCU) performing H.264 and H.265 decoding/encoding
 
-* Different generations of Zynq UltraScale+ RFSoC has different ADC resolutions
+* Different generations of Zynq UltraScale+ RFSoC have different ADC resolutions
 <table>
 	<tbody>
 		<tr>
