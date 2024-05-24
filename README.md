@@ -7906,6 +7906,7 @@ Versal Gen 2 series devices changes XPIO to X5IO, without any reliable informati
 		</tr>
 	</tbody>
 </table>
+
 # Alveo and Kria 
 
 In addition to standalone FPGA chips, Xilinx also offers the Alveo product line of ready-to-use FPGA-based accelerator boards, and the Kria product line of FPGA-based Systems-on-Module (SOMs). The FPGAs used on these boards reuse the same die as standalone chips, but are considered to be distinct products by the Vivado toolchain.
