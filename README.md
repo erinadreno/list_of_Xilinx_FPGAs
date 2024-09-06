@@ -646,7 +646,8 @@ The model name of most devices has some indication of its size, but the exact sc
 
 Note: The process information for early FPGA devices (before Virtex) may be inaccurate, due to the devices being subject
 to [die shrink](https://en.wikipedia.org/wiki/Die_shrink "Die shrink") without changing the model name — the process
-listed above may not be the only process in which a given device has been manufactured.# Early FPGA devices
+listed above may not be the only process in which a given device has been manufactured.
+# Early FPGA devices
 
 ## XC2000
 
@@ -4762,7 +4763,6 @@ used in at most Gen2×4 configuration due to GTP transceiver limitations.
 
 Note: several devices have smaller max User I/Os count than the I/O bank count would imply. This means that the device
 is not available in any packaging that actually bonds out the complete set of pads.
-
 # UltraScale
 
 The UltraScale devices are made of:[\[75\]](#cite_note-75)
@@ -5156,7 +5156,6 @@ encoding) and parallel width of 16, 32, 64, or 128 bits (20, 40, 80, or 160 bits
 		</tr>
 	<tfoot>
 </table>
-		
 # UltraScale-plus
 
 The UltraScale+ devices are functionally the same as UltraScale variants, with lipography changed from 20nm to 16nm FinFET. UltraScale+ also brings back Spartan, Artix, and Zynq families of products.
@@ -6771,6 +6770,7 @@ converters](https://en.wikipedia.org/wiki/Analog-to-digital_converter "Analog-to
 
 Note: the clock region grid is irregular on some UltraScale+ devices because of a hole in bottom for the Processing
 System (and possibly the VCU).
+
 # Versal
 
 In 2018, Xilinx announced a product line called Versal.[\[78\]](#cite_note-78) Versal chips contain CPU, GPU, [DSP](https://en.wikipedia.org/wiki/Digital_signal_processor "Digital signal processor"), and FPGA components. Versal is fabricated using 7nm process technology.
@@ -6778,7 +6778,9 @@ In 2018, Xilinx announced a product line called Versal.[\[78\]](#cite_note-78) V
 The Versal devices are made of:[\[79\]](#cite_note-79)
 
 *   PMC (Platform Management Controller), a [MicroBlaze](https://en.wikipedia.org/wiki/MicroBlaze "MicroBlaze")\-based processor block responsible for booting the device and monitoring its operations
-*   PS (Processing System), an ARM [system on a chip](https://en.wikipedia.org/wiki/System_on_a_chip "System on a chip") block with dual core [Cortex-A72](https://en.wikipedia.org/wiki/ARM_Cortex-A72 "ARM Cortex-A72") (APU) and dual-core [Cortex-R5F](https://en.wikipedia.org/wiki/ARM_Cortex-R "ARM Cortex-R") (RPU)
+*   PS (Processing System), an ARM [system on a chip](https://en.wikipedia.org/wiki/System_on_a_chip "System on a chip") block with
+    *  Dual core [Cortex-A72](https://en.wikipedia.org/wiki/ARM_Cortex-A72 "ARM Cortex-A72") application processors and dual-core [Cortex-R5F](https://en.wikipedia.org/wiki/ARM_Cortex-R "ARM Cortex-R") real-time processors on first generation Versal devices
+    *  Up to 8 cores Cortex-A78E application processors and 10 cores Cortex-R52 realtime processors on second generation Versal devices
 *   (on some devices) CPM, a hard PCI Express block with CCIX support; comes in Gen4 and Gen5 version
 *   (on some devices) XRAM, a single 32Mbit block of static RAM
 *   a NoC ([Network on Chip](https://en.wikipedia.org/wiki/Network_on_a_chip "Network on a chip")) spanning the device, with [AXI4](https://en.wikipedia.org/wiki/AMBA_(bus_protocol) "AMBA (bus protocol)") interface blocks, connecting the PS, the CPM, the FPGA, the DDRMC cores, and the AI cores together
@@ -6810,6 +6812,9 @@ The Versal devices are made of:[\[79\]](#cite_note-79)
         *   600Gbit Interlaken block, usable in 12×56.42Gbit, 24×28.21Gbit, or 24×12.5Gbit configurations
         *   400Gbit HSC (High-Speed Crypto) Engine, usable in 1×400Gbit, 2×200Gbit, or 4×100Gbit configurations
         *   VDE (Video Decoder Engine)
+        *   (2nd Gen device only) 4-core Mali-G78AE GPU 
+        *   (2nd Gen selected device only) Image signal processor (ISP) 
+        *   (2nd Gen selected device only) Video processing pipeline (VPP)
 *   (on some devices) [AI](https://en.wikipedia.org/wiki/Artificial_intelligence "Artificial intelligence") Engines, [vector processor](https://en.wikipedia.org/wiki/Vector_processor "Vector processor") cores meant for [machine learning](https://en.wikipedia.org/wiki/Machine_learning "Machine learning") usage
 *   (on some devices) [AI](https://en.wikipedia.org/wiki/Artificial_intelligence "Artificial intelligence")\-ML Engines, updated version of the AI Engines
 *   (on some devices) [AI](https://en.wikipedia.org/wiki/Artificial_intelligence "Artificial intelligence")\-ML v2 Engines, further updated version of the AI-ML Engines
