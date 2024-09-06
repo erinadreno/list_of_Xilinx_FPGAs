@@ -70,6 +70,7 @@ The model name of most devices has some indication of its size, but the exact sc
     * Zynq series after Ultrascale+ has a unique naming scheme with `XCVU[0-9][0-9][A-Z][A-Z]`. the two letters follows the same general rules as pure FPGA devices, with the two letter suffix representing different product lines. 
       * `EV,EG,(T)CG` devices are only available in the first generation; `(T)CG` devices only have ARM cores; `EG` devices have ARM cores as well as GPU; `EV` devices have ARM cores, GPU, and video decoder;
       * `DR` devices are available in 3 generations, first gen `ZU[21-29]DR`, second gen `ZU39DR`, and third gen `ZU[42-49]DR`. There are also DFE devices which heavily favors hardened IP, which are given the designation of `ZU[63-67]DR`. All devices integrated ARM cores, high speed ADC, and DAC.
+
 # Series overview
 
 <table>
@@ -647,6 +648,7 @@ The model name of most devices has some indication of its size, but the exact sc
 Note: The process information for early FPGA devices (before Virtex) may be inaccurate, due to the devices being subject
 to [die shrink](https://en.wikipedia.org/wiki/Die_shrink "Die shrink") without changing the model name — the process
 listed above may not be the only process in which a given device has been manufactured.
+
 # Early FPGA devices
 
 ## XC2000
@@ -4763,6 +4765,7 @@ used in at most Gen2×4 configuration due to GTP transceiver limitations.
 
 Note: several devices have smaller max User I/Os count than the I/O bank count would imply. This means that the device
 is not available in any packaging that actually bonds out the complete set of pads.
+
 # UltraScale
 
 The UltraScale devices are made of:[\[75\]](#cite_note-75)
@@ -5156,6 +5159,7 @@ encoding) and parallel width of 16, 32, 64, or 128 bits (20, 40, 80, or 160 bits
 		</tr>
 	<tfoot>
 </table>
+
 # UltraScale-plus
 
 The UltraScale+ devices are functionally the same as UltraScale variants, with lipography changed from 20nm to 16nm FinFET. UltraScale+ also brings back Spartan, Artix, and Zynq families of products.
@@ -6771,6 +6775,7 @@ converters](https://en.wikipedia.org/wiki/Analog-to-digital_converter "Analog-to
 Note: the clock region grid is irregular on some UltraScale+ devices because of a hole in bottom for the Processing
 System (and possibly the VCU).
 
+
 # Versal
 
 In 2018, Xilinx announced a product line called Versal.[\[78\]](#cite_note-78) Versal chips contain CPU, GPU, [DSP](https://en.wikipedia.org/wiki/Digital_signal_processor "Digital signal processor"), and FPGA components. Versal is fabricated using 7nm process technology.
@@ -7912,6 +7917,7 @@ Versal Gen 2 series devices changes XPIO to X5IO, without any reliable informati
 	</tbody>
 </table>
 
+
 # Alveo and Kria 
 
 In addition to standalone FPGA chips, Xilinx also offers the Alveo product line of ready-to-use FPGA-based accelerator boards, and the Kria product line of FPGA-based Systems-on-Module (SOMs). The FPGAs used on these boards reuse the same die as standalone chips, but are considered to be distinct products by the Vivado toolchain.
@@ -8491,6 +8497,7 @@ This list is [incomplete], but who the hell want to help WikiPedia when they rem
 </table>
 
 
+
 # References
 
 
@@ -8582,3 +8589,4 @@ This list is [incomplete], but who the hell want to help WikiPedia when they rem
 86.  **[^](#cite_ref-:3_86-0 "Jump up")** Lazzaro, John. ["Xilinx Part Family History"](http://www-inst.eecs.berkeley.edu/~cs294-59/fa10/resources/Xilinx-history/Xilinx-history.html). _UC Berkeley_. Retrieved 2018-12-03.
 87.  **[^](#cite_ref-:1_87-0 "Jump up")** ["First 20nm UtraScale ASIC-Class FPGA From Xilinx"](https://www.eetimes.com/document.asp?doc_id=1318843). _EE Times_. 2013-07-09. Retrieved 2018-12-03.
 88.  **[^](#cite_ref-:2_88-0 "Jump up")** ["Xilinx Unveils 16nm Ultrascale+ FPGAs, MPSoCs & 3D ICs"](https://www.eetimes.com/document.asp?doc_id=1325799). _EE Times_. 2015-02-24. Retrieved 2018-12-03.
+
