@@ -17,7 +17,7 @@ The Versal devices are made of:[\[79\]](#cite_note-79)
 *   XPIO I/O banks, which are the successor to UltraScale+ HP I/O banks; in a departure from previous devices, the XPIO banks are considered to be outside the FPGA part, and some XPIO banks can only be used by the DDRMC blocks (without FPGA connectivity)
 *   GTY transceivers, which can be used by the FPGA or by the CPM
 *   GTYP transceivers, which are a minor improvement of GTY transceivers
-*   GTM transceivers
+*   GTM and GTM2 transceivers
 *   the FPGA fabric with:
     *   configurable logic blocks (CLBs), which are quite different to previous architectures
         *   a CLB is made of 4 SLICEs: 2 SLICELs and 2 SLICEMs
@@ -46,6 +46,7 @@ The Versal devices are made of:[\[79\]](#cite_note-79)
 *   (on some devices) [AI](https://en.wikipedia.org/wiki/Artificial_intelligence "Artificial intelligence") Engines, [vector processor](https://en.wikipedia.org/wiki/Vector_processor "Vector processor") cores meant for [machine learning](https://en.wikipedia.org/wiki/Machine_learning "Machine learning") usage
 *   (on some devices) [AI](https://en.wikipedia.org/wiki/Artificial_intelligence "Artificial intelligence")\-ML Engines, updated version of the AI Engines
 *   (on some devices) [AI](https://en.wikipedia.org/wiki/Artificial_intelligence "Artificial intelligence")\-ML v2 Engines, further updated version of the AI-ML Engines
+*   (on some devices) LDPC decoders
 
 <table>
 	<thead>
@@ -919,7 +920,10 @@ The Versal devices are made of:[\[79\]](#cite_note-79)
 	<tfoot>
 </table>
 
-Versal Gen 2 series devices changes XPIO to X5IO, without any reliable information on its composition. They are listed separately
+## Versal Gen 2
+* Versal Gen 2 series devices change XPIO to X5IO, which is a high-performance I/O with 32 I/Os per bank. 
+
+* Additionally, Versal Premium series increase the PCIe phy to Gen6x8 per controller with the support for CXL 3.1. The transceivers have been updated to GTM2 with minimum 32G and up to 112G datarate (depends on PL vs. PS).
 <table>
 	<thead>
 		<tr>
@@ -993,8 +997,8 @@ Versal Gen 2 series devices changes XPIO to X5IO, without any reliable informati
 			<td rowspan=2>-</td><!-- Interlaken -->
 			<td rowspan=2>-</td><!-- HSC -->
 			<td rowspan=2>24 AI-ML v2</td><!-- AI Engine -->
-			<td rowspan=2></td><!-- Other -->
-			<td>-</td>
+			<td>-</td><!-- Other -->
+			<td rowspan=2>-</td>
 		</tr>
 		<tr>
 			<td>XC2VE3358</td><!-- SKU -->
@@ -1018,15 +1022,15 @@ Versal Gen 2 series devices changes XPIO to X5IO, without any reliable informati
 			<td rowspan=2>-</td><!-- Interlaken -->
 			<td rowspan=2>-</td><!-- HSC -->
 			<td rowspan=2>80 AI-ML v2</td><!-- AI Engine -->
-			<td rowspan=2></td><!-- Other -->
-			<td>-</td>
+			<td>-</td><!-- Other -->
+			<td rowspan=2>-</td>
 		</tr>
 		<tr>
-			<td>XC2VE3804</td><!-- SKU -->
+			<td>XC2VE3558</td><!-- SKU -->
 			<td>1 VCU + 3 ISP</td>
 		</tr>
 		<tr>
-			<td>XC2VE3504</td><!-- SKU -->
+			<td>XC2VE3804</td><!-- SKU -->
 			<td rowspan=2>Versal AI Edge Gen 2</td>
 			<td rowspan=2>67888</td><!-- SLICE -->
 			<td rowspan=2>543104</td><!-- LUT (SLICE*8) -->
@@ -1043,8 +1047,8 @@ Versal Gen 2 series devices changes XPIO to X5IO, without any reliable informati
 			<td rowspan=2>-</td><!-- Interlaken -->
 			<td rowspan=2>-</td><!-- HSC -->
 			<td rowspan=2>144 AI-ML v2</td><!-- AI Engine -->
-			<td rowspan=2></td><!-- Other -->
-			<td>-</td>
+			<td>-</td><!-- Other -->
+			<td rowspan=2>-</td>
 		</tr>
 		<tr>
 			<td>XC2VE3858</td><!-- SKU -->
@@ -1072,7 +1076,7 @@ Versal Gen 2 series devices changes XPIO to X5IO, without any reliable informati
 			<td>-</td>
 		</tr>
 		<tr>
-			<td>XC2VM3554</td><!-- SKU -->
+			<td>XC2VM3558</td><!-- SKU -->
 			<td>Versal AI Prime Gen 2</td>
 			<td>28125</td><!-- SLICE -->
 			<td>225000</td><!-- LUT (SLICE*8) -->
@@ -1094,27 +1098,24 @@ Versal Gen 2 series devices changes XPIO to X5IO, without any reliable informati
 		</tr>
 		<tr>
 			<td>XC2VM3654</td><!-- SKU -->
-			<td rowspan=2>Versal AI Prime Gen 2</td>
-			<td rowspan=2>50000</td><!-- SLICE -->
-			<td rowspan=2>400000</td><!-- LUT (SLICE*8) -->
-			<td rowspan=2>608</td><!-- BRAM -->
-			<td rowspan=2>36</td><!-- URAM -->
-			<td rowspan=2>1000</td><!-- DSP -->
-			<td rowspan=2>4</td><!-- DDRMC -->
-			<td rowspan=2>384</td><!-- X5IO -->
-			<td rowspan=2>0</td><!-- HDIO -->
-			<td rowspan=2>9</td><!-- NoC M/S ports -->
-			<td rowspan=2>32+4 GTYP</td><!-- Transceivers -->
-			<td rowspan=2>1 Gen5</td><!-- PCIE -->
-			<td rowspan=2>2 MRMAC</td><!-- Ethernet MAC -->
-			<td rowspan=2>-</td><!-- Interlaken -->
-			<td rowspan=2>-</td><!-- HSC -->
-			<td rowspan=2>-</td><!-- AI Engine -->
-			<td rowspan=2>2 VCU</td><!-- Other -->
-			<td rowspan=2>-</td>
-		</tr>
-		<tr>
-			<td>XC2VM3658</td><!-- SKU -->
+			<td>Versal AI Prime Gen 2</td>
+			<td>39760</td><!-- SLICE -->
+			<td>318080</td><!-- LUT (SLICE*8) -->
+			<td>631</td><!-- BRAM -->
+			<td>83</td><!-- URAM -->
+			<td>1428</td><!-- DSP -->
+			<td>4</td><!-- DDRMC -->
+			<td>184</td><!-- X5IO -->
+			<td>22</td><!-- HDIO -->
+			<td>7</td><!-- NoC M/S ports -->
+			<td>24+4 GTYP</td><!-- Transceivers -->
+			<td>2 Gen5</td><!-- PCIE -->
+			<td>2 MRMAC</td><!-- Ethernet MAC -->
+			<td>-</td><!-- Interlaken -->
+			<td>1</td><!-- HSC -->
+			<td>-</td><!-- AI Engine -->
+			<td>2 VCU</td><!-- Other -->
+			<td>-</td>
 		</tr>
 		<tr>
 			<td>XC2VM3858</td><!-- SKU -->
@@ -1128,7 +1129,7 @@ Versal Gen 2 series devices changes XPIO to X5IO, without any reliable informati
 			<td>512</td><!-- X5IO -->
 			<td>44</td><!-- HDIO -->
 			<td>24</td><!-- NoC M/S ports -->
-			<td>32+4 GTYP</td><!-- Transceivers -->
+			<td>20+4 GTYP</td><!-- Transceivers -->
 			<td>4 Gen5</td><!-- PCIE -->
 			<td>3 MRMAC</td><!-- Ethernet MAC -->
 			<td>-</td><!-- Interlaken -->
@@ -1136,6 +1137,244 @@ Versal Gen 2 series devices changes XPIO to X5IO, without any reliable informati
 			<td>-</td><!-- AI Engine -->
 			<td>1 VCU</td><!-- Other -->
 			<td>-</td>
+		</tr>
+		<tr>
+			<td>XC2VP3102</td><!-- SKU -->
+			<td>Versal AI Premium Gen 2</td>
+			<td>80432</td><!-- SLICE -->
+			<td>643456</td><!-- LUT (SLICE*8) -->
+			<td>1246</td><!-- BRAM -->
+			<td>288</td><!-- URAM -->
+			<td>3332</td><!-- DSP -->
+			<td>4</td><!-- DDRMC -->
+			<td>416</td><!-- X5IO -->
+			<td>22</td><!-- HDIO -->
+			<td>24</td><!-- NoC M/S ports -->
+			<td>16+16 GTM2</td><!-- Transceivers -->
+			<td>2 Gen6</td><!-- PCIE -->
+			<td>2 MRMAC + 1 DCMAC</td><!-- Ethernet MAC -->
+			<td>-</td><!-- Interlaken -->
+			<td>2</td><!-- HSC -->
+			<td>-</td><!-- AI Engine -->
+			<td>4 LDPC Decoders</td><!-- Other -->
+			<td>-</td>
+		</tr>
+		<tr>
+			<td>XC2VP3202</td><!-- SKU -->
+			<td>Versal AI Premium Gen 2</td>
+			<td>99632</td><!-- SLICE -->
+			<td>797056</td><!-- LUT (SLICE*8) -->
+			<td>1510</td><!-- BRAM -->
+			<td>360</td><!-- URAM -->
+			<td>4004</td><!-- DSP -->
+			<td>4</td><!-- DDRMC -->
+			<td>416</td><!-- X5IO -->
+			<td>22</td><!-- HDIO -->
+			<td>24</td><!-- NoC M/S ports -->
+			<td>16+16 GTM2</td><!-- Transceivers -->
+			<td>2 Gen6</td><!-- PCIE -->
+			<td>2 MRMAC + 1 DCMAC</td><!-- Ethernet MAC -->
+			<td>-</td><!-- Interlaken -->
+			<td>2</td><!-- HSC -->
+			<td>-</td><!-- AI Engine -->
+			<td>6 LDPC Decoders</td><!-- Other -->
+			<td>-</td>
+		</tr>
+		<tr>
+			<td>XC2VP3402</td><!-- SKU -->
+			<td>Versal AI Premium Gen 2</td>
+			<td>146352</td><!-- SLICE -->
+			<td>1170816</td><!-- LUT (SLICE*8) -->
+			<td>2230</td><!-- BRAM -->
+			<td>504</td><!-- URAM -->
+			<td>6080</td><!-- DSP -->
+			<td>8</td><!-- DDRMC -->
+			<td>736</td><!-- X5IO -->
+			<td>0</td><!-- HDIO -->
+			<td>40</td><!-- NoC M/S ports -->
+			<td>40+16 GTM2</td><!-- Transceivers -->
+			<td>2 Gen6</td><!-- PCIE -->
+			<td>1 MRMAC + 3 DCMAC</td><!-- Ethernet MAC -->
+			<td>-</td><!-- Interlaken -->
+			<td>1</td><!-- HSC -->
+			<td>-</td><!-- AI Engine -->
+			<td>-</td><!-- Other -->
+			<td>-</td>
+		</tr>
+		<tr>
+			<td>XC2VP3502</td><!-- SKU -->
+			<td>Versal AI Premium Gen 2</td>
+			<td>187056</td><!-- SLICE -->
+			<td>1496448</td><!-- LUT (SLICE*8) -->
+			<td>2806</td><!-- BRAM -->
+			<td>648</td><!-- URAM -->
+			<td>2856</td><!-- DSP -->
+			<td>8</td><!-- DDRMC -->
+			<td>736</td><!-- X5IO -->
+			<td>0</td><!-- HDIO -->
+			<td>40</td><!-- NoC M/S ports -->
+			<td>56+16 GTM2</td><!-- Transceivers -->
+			<td>2 Gen6</td><!-- PCIE -->
+			<td>1 MRMAC + 5 DCMAC</td><!-- Ethernet MAC -->
+			<td>-</td><!-- Interlaken -->
+			<td>1</td><!-- HSC -->
+			<td>-</td><!-- AI Engine -->
+			<td>-</td><!-- Other -->
+			<td>-</td>
+		</tr>
+		<tr>
+			<td>XC2VP3602</td><!-- SKU -->
+			<td>Versal AI Premium Gen 2</td>
+			<td>187056</td><!-- SLICE -->
+			<td>1496448</td><!-- LUT (SLICE*8) -->
+			<td>2806</td><!-- BRAM -->
+			<td>648</td><!-- URAM -->
+			<td>7616</td><!-- DSP -->
+			<td>8</td><!-- DDRMC -->
+			<td>736</td><!-- X5IO -->
+			<td>0</td><!-- HDIO -->
+			<td>40</td><!-- NoC M/S ports -->
+			<td>56+16 GTM2</td><!-- Transceivers -->
+			<td>2 Gen6</td><!-- PCIE -->
+			<td>1 MRMAC + 5 DCMAC</td><!-- Ethernet MAC -->
+			<td>-</td><!-- Interlaken -->
+			<td>1</td><!-- HSC -->
+			<td>-</td><!-- AI Engine -->
+			<td>-</td><!-- Other -->
+			<td>-</td>
+		</tr>
+	</tbody>
+</table>
+
+## Versal RF Series
+The Versal RF series differs from generic Versal devices with the inclusion of following special function hard IP:
+* 14-bit RF-ADC and 14-bit RF-DAC with varying sampling rate (As of Jul. 2025, the max DAC sampling rate are all 16GSPS)
+* 1 GSPS channelizers (plural)
+* FFT/iFFT blocks
+* Polyphase Arbitrary Resampler
+* Additional memory specific to the AI Engine
+* (on some devices) LDPC decoders
+
+The RF series deivces currently have no support for HSC (high speed crypto) blocks and no distinction between PL and PS transceivers.
+
+<table>
+	<thead>
+		<tr>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">Model
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">Family
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">SLICEs
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">6-LUTs
+				(=SLICEs×8)
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">Block
+				RAMs (36kbit each)
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">Ultra
+				RAMs (288kbit each)
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">DSP58
+				blocks
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">DDRMC
+				blocks
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">X5IO
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">HDIO
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">NoC
+				master/slave ports
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">
+				Transceivers
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">PCI
+				Express blocks
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">
+				Ethernet MACs
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">
+				Interlaken blocks
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">HSC blocks
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">AI Engines
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">AI Engines Memory
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">RF ADC(GSPS)+DAC(GSPS)
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">Channelizer
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">FFT/iFFT blocks
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">Other
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">Notes
+			</th>
+	</thead>
+	<tbody>
+		<tr>
+			<td>XCVR1602</td><!-- SKU -->
+			<td rowspan=2>Versal RF Series</td>
+			<td rowspan=2>68880</td><!-- SLICE -->
+			<td rowspan=2>551040</td><!-- LUT (SLICE*8) -->
+			<td rowspan=2>1109</td><!-- BRAM -->
+			<td rowspan=2>357</td><!-- URAM -->
+			<td rowspan=2>2256</td><!-- DSP -->
+			<td rowspan=2>4</td><!-- DDRMC -->
+			<td rowspan=2>448</td><!-- X5IO -->
+			<td rowspan=2>22</td><!-- HDIO -->
+			<td rowspan=2>16</td><!-- NoC M/S ports -->
+			<td rowspan=2>12 GTYP + 8 GTM</td><!-- Transceivers -->
+			<td rowspan=2>1 Gen5</td><!-- PCIE -->
+			<td rowspan=2>2 MRMAC</td><!-- Ethernet MAC -->
+			<td rowspan=2>-</td><!-- Interlaken -->
+			<td rowspan=2>-</td><!-- HSC -->
+			<td rowspan=2>126</td><!-- AI Engine -->
+			<td rowspan=2>32 Mb</td><!-- AI Engine Memory -->
+			<td>16 (8GSPS) + 16 (16GSPS)</td><!-- RFADC/DAC-->
+			<td rowspan=2>224</td><!-- Channelizer -->
+			<td rowspan=2>28</td><!-- FFT/iFFT -->
+			<td rowspan=2>4 LDPC Decoders</td><!-- Other -->
+			<td rowspan=2>-</td>
+		</tr>
+		<tr>
+			<td>XCVR1652</td><!-- SKU -->
+			<td>4 (32GSPS) + 16 (16GSPS)</td><!-- RFADC/DAC-->
+		</tr>
+		<tr>
+			<td>XCVR1902</td><!-- SKU -->
+			<td rowspan=2>Versal RF Series</td>
+			<td rowspan=2>141360</td><!-- SLICE -->
+			<td rowspan=2>1130880</td><!-- LUT (SLICE*8) -->
+			<td rowspan=2>2266</td><!-- BRAM -->
+			<td rowspan=2>262</td><!-- URAM -->
+			<td rowspan=2>3976</td><!-- DSP -->
+			<td rowspan=2>4</td><!-- DDRMC -->
+			<td rowspan=2>448</td><!-- X5IO -->
+			<td rowspan=2>22</td><!-- HDIO -->
+			<td rowspan=2>36</td><!-- NoC M/S ports -->
+			<td rowspan=2>20 GTM2</td><!-- Transceivers -->
+			<td rowspan=2>1 Gen5</td><!-- PCIE -->
+			<td rowspan=2>2 MRMAC + 3 DCMAC</td><!-- Ethernet MAC -->
+			<td rowspan=2>-</td><!-- Interlaken -->
+			<td rowspan=2>-</td><!-- HSC -->
+			<td rowspan=2>120</td><!-- AI Engine -->
+			<td rowspan=2>30 Mb</td><!-- AI Engine Memory -->
+			<td>16 (8GSPS) + 16 (16GSPS)</td><!-- RFADC/DAC-->
+			<td rowspan=2>320</td><!-- Channelizer -->
+			<td rowspan=2>40</td><!-- FFT/iFFT -->
+			<td rowspan=2>8 Resampler</td><!-- Other -->
+			<td rowspan=2>-</td>
+		</tr>
+		<tr>
+			<td>XCVR1952</td><!-- SKU -->
+			<td>8 (32GSPS) + 16 (16GSPS)</td><!-- RFADC/DAC-->
 		</tr>
 	</tbody>
 </table>
