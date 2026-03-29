@@ -2,6 +2,8 @@
 
 The UltraScale+ devices are functionally the same as UltraScale variants, with lipography changed from 20nm to 16nm FinFET. UltraScale+ also brings back Spartan, Artix, and Zynq families of products.
 
+Spartan UltraScale+ device family included hardened memory contrller supports transfer rate up to 4266 MT/s at 16bit per channel/controller. Other UltraScale+ device families implement DDR memory support with soft memory controller IP.
+
 Zynq UltraScale+ devices are [ARM Cortex-A53](https://en.wikipedia.org/wiki/ARM_Cortex-A53 "ARM Cortex-A53") based
 systems on chip sharing a die with an FPGA. The SoC part of the device is called a Processing System (PS). Each model of
 Zynq UltraScale+ MPSoC is available in up to 3 sub-models: CG, EG, and EV. The main differences among these sub-models
@@ -1612,3 +1614,104 @@ converters](https://en.wikipedia.org/wiki/Analog-to-digital_converter "Analog-to
 
 Note: the clock region grid is irregular on some UltraScale+ devices because of a hole in bottom for the Processing
 System (and possibly the VCU).
+
+# UltraScale-plus Gen 2
+* UltraScale+ Gen 2 series products include high speed XP5IO first introduced in Versal Gen 2 products, which replaces HPIO found in Gen 1 products.
+* Same hardened memory controller found in Spartan UltraScale+ is included in UltraScale+ Gen 2 device family. The MC support up to 4266 MT/s at 16bit per channel/controller.
+* Interlaken Core is absent in Gen 2 products.
+
+## Kintex UltraScale+ Gen 2
+<table>
+	<tbody>
+		<tr>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">Model
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">Family
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">CLBs
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">6-LUTs
+				(=CLBs×8)
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">Block
+				RAMs (36kbit each)
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">Ultra
+				RAMs (288kbit each)
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">
+				DSP48E2 blocks
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">CMTs
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">XP5IO
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">HDIO
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">
+				Gigabit transceivers (max)
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">PCI
+				Express Cores
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">100
+				Gigabit Ethernet MACs
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">Others
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">Notes
+		</tr>
+        <tr>
+			<td>XC2KU030P</td>
+			<td>Kintex UltraScale+ Gen 2</td>
+			<td>40950</td>
+			<td>299520</td>
+			<td>336</td>
+			<td>64</td>
+			<td>1248</td>
+			<td>4</td>
+			<td>264</td>
+			<td>78</td>
+			<td>16 GTY</td>
+			<td>2 PCIE4CE</td>
+			<td>2</td>
+			<td>4x MC</td>
+			<td>-</td>
+		</tr>
+        <tr>
+			<td>XC2KU040P</td>
+			<td>Kintex UltraScale+ Gen 2</td>
+			<td>46800</td>
+			<td>374400</td>
+			<td>420</td>
+			<td>80</td>
+			<td>1560</td>
+			<td>6</td>
+			<td>396</td>
+			<td>78</td>
+			<td>16 GTY</td>
+			<td>2 PCIE4CE</td>
+			<td>2</td>
+			<td>6x MC</td>
+			<td>-</td>
+		</tr>
+        <tr>
+			<td>XC2KU050P</td>
+			<td>Kintex UltraScale+ Gen 2</td>
+			<td>56160</td>
+			<td>449280</td>
+			<td>504</td>
+			<td>96</td>
+			<td>1872</td>
+			<td>6</td>
+			<td>396</td>
+			<td>120</td>
+			<td>24 GTY</td>
+			<td>3 PCIE4CE</td>
+			<td>2</td>
+			<td>6x MC</td>
+			<td>-</td>
+		</tr>
+	<tfoot>
+</table>
+MC : Memory Controller

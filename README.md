@@ -5164,6 +5164,8 @@ encoding) and parallel width of 16, 32, 64, or 128 bits (20, 40, 80, or 160 bits
 
 The UltraScale+ devices are functionally the same as UltraScale variants, with lipography changed from 20nm to 16nm FinFET. UltraScale+ also brings back Spartan, Artix, and Zynq families of products.
 
+Spartan UltraScale+ device family included hardened memory contrller supports transfer rate up to 4266 MT/s at 16bit per channel/controller. Other UltraScale+ device families implement DDR memory support with soft memory controller IP.
+
 Zynq UltraScale+ devices are [ARM Cortex-A53](https://en.wikipedia.org/wiki/ARM_Cortex-A53 "ARM Cortex-A53") based
 systems on chip sharing a die with an FPGA. The SoC part of the device is called a Processing System (PS). Each model of
 Zynq UltraScale+ MPSoC is available in up to 3 sub-models: CG, EG, and EV. The main differences among these sub-models
@@ -6775,7 +6777,106 @@ converters](https://en.wikipedia.org/wiki/Analog-to-digital_converter "Analog-to
 Note: the clock region grid is irregular on some UltraScale+ devices because of a hole in bottom for the Processing
 System (and possibly the VCU).
 
+# UltraScale-plus Gen 2
+* UltraScale+ Gen 2 series products include high speed XP5IO first introduced in Versal Gen 2 products, which replaces HPIO found in Gen 1 products.
+* Same hardened memory controller found in Spartan UltraScale+ is included in UltraScale+ Gen 2 device family. The MC support up to 4266 MT/s at 16bit per channel/controller.
+* Interlaken Core is absent in Gen 2 products.
 
+## Kintex UltraScale+ Gen 2
+<table>
+	<tbody>
+		<tr>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">Model
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">Family
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">CLBs
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">6-LUTs
+				(=CLBs×8)
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">Block
+				RAMs (36kbit each)
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">Ultra
+				RAMs (288kbit each)
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">
+				DSP48E2 blocks
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">CMTs
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">XP5IO
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">HDIO
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">
+				Gigabit transceivers (max)
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">PCI
+				Express Cores
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">100
+				Gigabit Ethernet MACs
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">Others
+			</th>
+			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">Notes
+		</tr>
+        <tr>
+			<td>XC2KU030P</td>
+			<td>Kintex UltraScale+ Gen 2</td>
+			<td>40950</td>
+			<td>299520</td>
+			<td>336</td>
+			<td>64</td>
+			<td>1248</td>
+			<td>4</td>
+			<td>264</td>
+			<td>78</td>
+			<td>16 GTY</td>
+			<td>2 PCIE4CE</td>
+			<td>2</td>
+			<td>4x MC</td>
+			<td>-</td>
+		</tr>
+        <tr>
+			<td>XC2KU040P</td>
+			<td>Kintex UltraScale+ Gen 2</td>
+			<td>46800</td>
+			<td>374400</td>
+			<td>420</td>
+			<td>80</td>
+			<td>1560</td>
+			<td>6</td>
+			<td>396</td>
+			<td>78</td>
+			<td>16 GTY</td>
+			<td>2 PCIE4CE</td>
+			<td>2</td>
+			<td>6x MC</td>
+			<td>-</td>
+		</tr>
+        <tr>
+			<td>XC2KU050P</td>
+			<td>Kintex UltraScale+ Gen 2</td>
+			<td>56160</td>
+			<td>449280</td>
+			<td>504</td>
+			<td>96</td>
+			<td>1872</td>
+			<td>6</td>
+			<td>396</td>
+			<td>120</td>
+			<td>24 GTY</td>
+			<td>3 PCIE4CE</td>
+			<td>2</td>
+			<td>6x MC</td>
+			<td>-</td>
+		</tr>
+	<tfoot>
+</table>
+MC : Memory Controller
 
 # Versal
 
@@ -6785,8 +6886,8 @@ The Versal devices are made of:[\[79\]](#cite_note-79)
 
 *   PMC (Platform Management Controller), a [MicroBlaze](https://en.wikipedia.org/wiki/MicroBlaze "MicroBlaze")\-based processor block responsible for booting the device and monitoring its operations
 *   PS (Processing System), an ARM [system on a chip](https://en.wikipedia.org/wiki/System_on_a_chip "System on a chip") block with
-	*  Dual core [Cortex-A72](https://en.wikipedia.org/wiki/ARM_Cortex-A72 "ARM Cortex-A72") application processors and dual-core [Cortex-R5F](https://en.wikipedia.org/wiki/ARM_Cortex-R "ARM Cortex-R") real-time processors on first generation Versal devices
-	*  Up to 8 cores Cortex-A78E application processors and 10 cores Cortex-R52 realtime processors on second generation Versal devices
+    *  Dual core [Cortex-A72](https://en.wikipedia.org/wiki/ARM_Cortex-A72 "ARM Cortex-A72") application processors and dual-core [Cortex-R5F](https://en.wikipedia.org/wiki/ARM_Cortex-R "ARM Cortex-R") real-time processors on first generation Versal devices
+    *  Up to 8 cores Cortex-A78E application processors and 10 cores Cortex-R52 realtime processors on second generation Versal devices
 *   (on some devices) CPM, a hard PCI Express block with CCIX support; comes in Gen4 and Gen5 version
 *   (on some devices) XRAM, a single 32Mbit block of static RAM
 *   a NoC ([Network on Chip](https://en.wikipedia.org/wiki/Network_on_a_chip "Network on a chip")) spanning the device, with [AXI4](https://en.wikipedia.org/wiki/AMBA_(bus_protocol) "AMBA (bus protocol)") interface blocks, connecting the PS, the CPM, the FPGA, the DDRMC cores, and the AI cores together
@@ -6797,30 +6898,30 @@ The Versal devices are made of:[\[79\]](#cite_note-79)
 *   GTYP transceivers, which are a minor improvement of GTY transceivers
 *   GTM and GTM2 transceivers
 *   the FPGA fabric with:
-	*   configurable logic blocks (CLBs), which are quite different to previous architectures
-		*   a CLB is made of 4 SLICEs: 2 SLICELs and 2 SLICEMs
-		*   each SLICE still contains 8 6-input LUTs, each fracturable into two 5-input LUTs with shared inputs
-		*   each slice still contains 16 flip-flops, two for each LUT
-		*   there are no more wide LUT multiplexers
-		*   the carry chain has been replaced with new carry and cascade logic
-		*   the distributed RAM configurations are different
-	*   36kbit true dual port block RAMs, with some changes from UltraScale+
-	*   288kbit UltraRAM blocks, with some changes from UltraScale+
-	*   DSP58 blocks, which replace the old DSP48\* blocks; two adjacent DSP58 blocks can be combined into a single DSP58\_CPLX block, performing [complex](https://en.wikipedia.org/wiki/Complex_number "Complex number") arithmetic
-	*   HD I/O blocks, similar to UltraScale+
-		*   now with 11 differential pairs (22 pins) per block
-	*   NoC master access ports
-	*   NoC slave access ports
-	*   hard IP blocks:
-		*   PCI Express Gen4 and Gen5 cores
-		*   MRMAC (Multirate Ethernet MAC), usable in 1×100Gbit, 2×50Gbit, 1×40Gbit, 4×25Gbit, 4×10Gbit configurations
-		*   DCMAC (600G Channelized Multirate Ethernet Subsystem), usable in 1×400Gbit, 3×200Gbit, 6×100Gbit configurations
-		*   600Gbit Interlaken block, usable in 12×56.42Gbit, 24×28.21Gbit, or 24×12.5Gbit configurations
-		*   400Gbit HSC (High-Speed Crypto) Engine, usable in 1×400Gbit, 2×200Gbit, or 4×100Gbit configurations
-		*   VDE (Video Decoder Engine)
-		*   (2nd Gen device only) 4-core Mali-G78AE GPU 
-		*   (2nd Gen selected device only) Image signal processor (ISP) 
-		*   (2nd Gen selected device only) Video processing pipeline (VPP)
+    *   configurable logic blocks (CLBs), which are quite different to previous architectures
+        *   a CLB is made of 4 SLICEs: 2 SLICELs and 2 SLICEMs
+        *   each SLICE still contains 8 6-input LUTs, each fracturable into two 5-input LUTs with shared inputs
+        *   each slice still contains 16 flip-flops, two for each LUT
+        *   there are no more wide LUT multiplexers
+        *   the carry chain has been replaced with new carry and cascade logic
+        *   the distributed RAM configurations are different
+    *   36kbit true dual port block RAMs, with some changes from UltraScale+
+    *   288kbit UltraRAM blocks, with some changes from UltraScale+
+    *   DSP58 blocks, which replace the old DSP48\* blocks; two adjacent DSP58 blocks can be combined into a single DSP58\_CPLX block, performing [complex](https://en.wikipedia.org/wiki/Complex_number "Complex number") arithmetic
+    *   HD I/O blocks, similar to UltraScale+
+        *   now with 11 differential pairs (22 pins) per block
+    *   NoC master access ports
+    *   NoC slave access ports
+    *   hard IP blocks:
+        *   PCI Express Gen4 and Gen5 cores
+        *   MRMAC (Multirate Ethernet MAC), usable in 1×100Gbit, 2×50Gbit, 1×40Gbit, 4×25Gbit, 4×10Gbit configurations
+        *   DCMAC (600G Channelized Multirate Ethernet Subsystem), usable in 1×400Gbit, 3×200Gbit, 6×100Gbit configurations
+        *   600Gbit Interlaken block, usable in 12×56.42Gbit, 24×28.21Gbit, or 24×12.5Gbit configurations
+        *   400Gbit HSC (High-Speed Crypto) Engine, usable in 1×400Gbit, 2×200Gbit, or 4×100Gbit configurations
+        *   VDE (Video Decoder Engine)
+        *   (2nd Gen device only) 4-core Mali-G78AE GPU 
+        *   (2nd Gen selected device only) Image signal processor (ISP) 
+        *   (2nd Gen selected device only) Video processing pipeline (VPP)
 *   (on some devices) [AI](https://en.wikipedia.org/wiki/Artificial_intelligence "Artificial intelligence") Engines, [vector processor](https://en.wikipedia.org/wiki/Vector_processor "Vector processor") cores meant for [machine learning](https://en.wikipedia.org/wiki/Machine_learning "Machine learning") usage
 *   (on some devices) [AI](https://en.wikipedia.org/wiki/Artificial_intelligence "Artificial intelligence")\-ML Engines, updated version of the AI Engines
 *   (on some devices) [AI](https://en.wikipedia.org/wiki/Artificial_intelligence "Artificial intelligence")\-ML v2 Engines, further updated version of the AI-ML Engines
@@ -7699,7 +7800,6 @@ The Versal devices are made of:[\[79\]](#cite_note-79)
 </table>
 
 ## Versal Gen 2
-
 * Versal Gen 2 series devices change XPIO to X5IO, which is a high-performance I/O with 32 I/Os per bank. 
 
 * Additionally, Versal Premium series increase the PCIe phy to Gen6x8 per controller with the support for CXL 3.1. The transceivers have been updated to GTM2 with minimum 32G and up to 112G datarate (depends on PL vs. PS).
@@ -8157,7 +8257,6 @@ The RF series deivces currently have no support for HSC (high speed crypto) bloc
 		</tr>
 	</tbody>
 </table>
-
 
 # Alveo and Kria 
 
