@@ -166,7 +166,7 @@ The Versal devices are made of:[\[79\]](#cite_note-79)
 			<td>-</td>
 			<td>24 AI-ML (12×2)</td>
 			<td>XRAM</td>
-			<td>software-limitted version of XCVE2302, not yet in production
+			<td>software-limited version of XCVE2302, not yet in production
 		</tr>
 		<tr>
 			<td>XCVE2302</td>
@@ -208,7 +208,7 @@ The Versal devices are made of:[\[79\]](#cite_note-79)
 			<td>-</td>
 			<td>304 (38×8)</td>
 			<td>CPM Gen4</td>
-			<td>software-limitted version of XCVC1702
+			<td>software-limited version of XCVC1702
 		</tr>
 		<tr>
 			<td>XCVE2602</td>
@@ -229,7 +229,7 @@ The Versal devices are made of:[\[79\]](#cite_note-79)
 			<td>-</td>
 			<td>152 AI-ML (38×4)</td>
 			<td>CPM Gen5, 2×VDE</td>
-			<td>software-limitted version of XCVC2802, not yet in production
+			<td>software-limited version of XCVC2802, not yet in production
 		</tr>
 		<tr>
 			<td>XCVE2802</td>
@@ -250,7 +250,7 @@ The Versal devices are made of:[\[79\]](#cite_note-79)
 			<td>-</td>
 			<td>304 AI-ML (38×8)</td>
 			<td>CPM Gen5, 4×VDE</td>
-			<td>software-limitted version of XCVC2802, not yet in production
+			<td>software-limited version of XCVC2802, not yet in production
 		</tr>
 		<tr>
 			<td>XCVC1352</td>
@@ -292,7 +292,7 @@ The Versal devices are made of:[\[79\]](#cite_note-79)
 			<td>-</td>
 			<td>198 (33×6)</td>
 			<td>CPM Gen4</td>
-			<td>software-limitted version of XCVC1702
+			<td>software-limited version of XCVC1702
 		</tr>
 		<tr>
 			<td>XCVC1702</td>
@@ -334,7 +334,7 @@ The Versal devices are made of:[\[79\]](#cite_note-79)
 			<td>-</td>
 			<td>300 (50×6)</td>
 			<td>CPM Gen4</td>
-			<td>software-limitted version of XCVC1902
+			<td>software-limited version of XCVC1902
 		</tr>
 		<tr>
 			<td>XCVC1902</td>
@@ -376,7 +376,7 @@ The Versal devices are made of:[\[79\]](#cite_note-79)
 			<td>-</td>
 			<td>152 AI-ML (38×4)</td>
 			<td>CPM Gen5, 2×VDE</td>
-			<td>software-limitted version of XCVC2802, not yet in production
+			<td>software-limited version of XCVC2802, not yet in production
 		</tr>
 		<tr>
 			<td>XCVC2802</td>
@@ -418,7 +418,7 @@ The Versal devices are made of:[\[79\]](#cite_note-79)
 			<td>-</td>
 			<td>-</td>
 			<td>XRAM</td>
-			<td>software-limitted version of XCVE2302, not yet in production
+			<td>software-limited version of XCVE2302, not yet in production
 		</tr>
 		<tr>
 			<td>XCVM1302</td>
@@ -439,7 +439,7 @@ The Versal devices are made of:[\[79\]](#cite_note-79)
 			<td>-</td>
 			<td>-</td>
 			<td>CPM Gen4</td>
-			<td>software-limitted version of XCVM1402
+			<td>software-limited version of XCVM1402
 		</tr>
 		<tr>
 			<td>XCVM1402</td>
@@ -565,7 +565,7 @@ The Versal devices are made of:[\[79\]](#cite_note-79)
 			<td>-</td>
 			<td>-</td>
 			<td>-</td>
-			<td>software-limitted version of XCVP1402, not yet in production
+			<td>software-limited version of XCVP1402, not yet in production
 		</tr>
 		<tr>
 			<td>XCVM2502</td>
@@ -586,7 +586,7 @@ The Versal devices are made of:[\[79\]](#cite_note-79)
 			<td>-</td>
 			<td>-</td>
 			<td>CPM Gen5</td>
-			<td>software-limitted version of XCVP1202, not yet in production
+			<td>software-limited version of XCVP1202, not yet in production
 		</tr>
 		<tr>
 			<td>XCVM2902</td>
@@ -607,7 +607,7 @@ The Versal devices are made of:[\[79\]](#cite_note-79)
 			<td>-</td>
 			<td>-</td>
 			<td>-</td>
-			<td>software-limitted version of XCVP1402, not yet in production
+			<td>software-limited version of XCVP1402, not yet in production
 		</tr>
 		<tr>
 			<td>XCVP1002</td>
@@ -628,7 +628,7 @@ The Versal devices are made of:[\[79\]](#cite_note-79)
 			<td>1</td>
 			<td>-</td>
 			<td>CPM Gen4</td>
-			<td>software-limitted version of XCVP1052, not yet in production
+			<td>software-limited version of XCVP1052, not yet in production
 		</tr>
 		<tr>
 			<td>XCVP1052</td>
@@ -670,7 +670,7 @@ The Versal devices are made of:[\[79\]](#cite_note-79)
 			<td>3</td>
 			<td>-</td>
 			<td>-</td>
-			<td>software-limitted version of XCVP1402
+			<td>software-limited version of XCVP1402
 		</tr>
 		<tr>
 			<td>XCVP1202</td>
@@ -924,6 +924,8 @@ The Versal devices are made of:[\[79\]](#cite_note-79)
 * Versal Gen 2 series devices change XPIO to X5IO, which is a high-performance I/O with 32 I/Os per bank. 
 
 * Additionally, Versal Premium series increase the PCIe phy to Gen6x8 per controller with the support for CXL 3.1. The transceivers have been updated to GTM2 with minimum 32G and up to 112G datarate (depends on PL vs. PS).
+
+* Selected Versal Premium Gen 2 devices integrate on-package LPDDR5X memory. As a result, their (LP-)DDR5 capable IO pins are preoccupied.
 <table>
 	<thead>
 		<tr>
@@ -964,9 +966,6 @@ The Versal devices are made of:[\[79\]](#cite_note-79)
 			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">
 				Ethernet MACs
 			</th>
-			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">
-				Interlaken blocks
-			</th>
 			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">HSC
 				blocks
 			</th>
@@ -994,7 +993,6 @@ The Versal devices are made of:[\[79\]](#cite_note-79)
 			<td rowspan=2>4+4 GTYP</td><!-- Transceivers -->
 			<td rowspan=2>1 Gen5</td><!-- PCIE -->
 			<td rowspan=2>1 MRMAC</td><!-- Ethernet MAC -->
-			<td rowspan=2>-</td><!-- Interlaken -->
 			<td rowspan=2>-</td><!-- HSC -->
 			<td rowspan=2>24 AI-ML v2</td><!-- AI Engine -->
 			<td>-</td><!-- Other -->
@@ -1019,7 +1017,6 @@ The Versal devices are made of:[\[79\]](#cite_note-79)
 			<td rowspan=2>12+4 GTYP</td><!-- Transceivers -->
 			<td rowspan=2>3 Gen5</td><!-- PCIE -->
 			<td rowspan=2>1 MRMAC</td><!-- Ethernet MAC -->
-			<td rowspan=2>-</td><!-- Interlaken -->
 			<td rowspan=2>-</td><!-- HSC -->
 			<td rowspan=2>80 AI-ML v2</td><!-- AI Engine -->
 			<td>-</td><!-- Other -->
@@ -1044,7 +1041,6 @@ The Versal devices are made of:[\[79\]](#cite_note-79)
 			<td rowspan=2>20+4 GTYP</td><!-- Transceivers -->
 			<td rowspan=2>4 Gen5</td><!-- PCIE -->
 			<td rowspan=2>3 MRMAC</td><!-- Ethernet MAC -->
-			<td rowspan=2>-</td><!-- Interlaken -->
 			<td rowspan=2>-</td><!-- HSC -->
 			<td rowspan=2>144 AI-ML v2</td><!-- AI Engine -->
 			<td>-</td><!-- Other -->
@@ -1069,7 +1065,6 @@ The Versal devices are made of:[\[79\]](#cite_note-79)
 			<td>4+4 GTYP</td><!-- Transceivers -->
 			<td>1 Gen5</td><!-- PCIE -->
 			<td>1 MRMAC</td><!-- Ethernet MAC -->
-			<td>-</td><!-- Interlaken -->
 			<td>-</td><!-- HSC -->
 			<td>-</td><!-- AI Engine -->
 			<td>1 VCU</td><!-- Other -->
@@ -1090,7 +1085,6 @@ The Versal devices are made of:[\[79\]](#cite_note-79)
 			<td>12+4 GTYP</td><!-- Transceivers -->
 			<td>3 Gen5</td><!-- PCIE -->
 			<td>1 MRMAC</td><!-- Ethernet MAC -->
-			<td>-</td><!-- Interlaken -->
 			<td>-</td><!-- HSC -->
 			<td>-</td><!-- AI Engine -->
 			<td>1 VCU</td><!-- Other -->
@@ -1111,7 +1105,6 @@ The Versal devices are made of:[\[79\]](#cite_note-79)
 			<td>24+4 GTYP</td><!-- Transceivers -->
 			<td>2 Gen5</td><!-- PCIE -->
 			<td>2 MRMAC</td><!-- Ethernet MAC -->
-			<td>-</td><!-- Interlaken -->
 			<td>1</td><!-- HSC -->
 			<td>-</td><!-- AI Engine -->
 			<td>2 VCU</td><!-- Other -->
@@ -1132,7 +1125,6 @@ The Versal devices are made of:[\[79\]](#cite_note-79)
 			<td>20+4 GTYP</td><!-- Transceivers -->
 			<td>4 Gen5</td><!-- PCIE -->
 			<td>3 MRMAC</td><!-- Ethernet MAC -->
-			<td>-</td><!-- Interlaken -->
 			<td>-</td><!-- HSC -->
 			<td>-</td><!-- AI Engine -->
 			<td>1 VCU</td><!-- Other -->
@@ -1153,7 +1145,6 @@ The Versal devices are made of:[\[79\]](#cite_note-79)
 			<td>16+16 GTM2</td><!-- Transceivers -->
 			<td>2 Gen6</td><!-- PCIE -->
 			<td>2 MRMAC + 1 DCMAC</td><!-- Ethernet MAC -->
-			<td>-</td><!-- Interlaken -->
 			<td>2</td><!-- HSC -->
 			<td>-</td><!-- AI Engine -->
 			<td>4 LDPC Decoders</td><!-- Other -->
@@ -1174,7 +1165,6 @@ The Versal devices are made of:[\[79\]](#cite_note-79)
 			<td>16+16 GTM2</td><!-- Transceivers -->
 			<td>2 Gen6</td><!-- PCIE -->
 			<td>2 MRMAC + 1 DCMAC</td><!-- Ethernet MAC -->
-			<td>-</td><!-- Interlaken -->
 			<td>2</td><!-- HSC -->
 			<td>-</td><!-- AI Engine -->
 			<td>6 LDPC Decoders</td><!-- Other -->
@@ -1195,7 +1185,6 @@ The Versal devices are made of:[\[79\]](#cite_note-79)
 			<td>40+16 GTM2</td><!-- Transceivers -->
 			<td>2 Gen6</td><!-- PCIE -->
 			<td>1 MRMAC + 3 DCMAC</td><!-- Ethernet MAC -->
-			<td>-</td><!-- Interlaken -->
 			<td>1</td><!-- HSC -->
 			<td>-</td><!-- AI Engine -->
 			<td>-</td><!-- Other -->
@@ -1216,7 +1205,6 @@ The Versal devices are made of:[\[79\]](#cite_note-79)
 			<td>56+16 GTM2</td><!-- Transceivers -->
 			<td>2 Gen6</td><!-- PCIE -->
 			<td>1 MRMAC + 5 DCMAC</td><!-- Ethernet MAC -->
-			<td>-</td><!-- Interlaken -->
 			<td>1</td><!-- HSC -->
 			<td>-</td><!-- AI Engine -->
 			<td>-</td><!-- Other -->
@@ -1237,10 +1225,69 @@ The Versal devices are made of:[\[79\]](#cite_note-79)
 			<td>56+16 GTM2</td><!-- Transceivers -->
 			<td>2 Gen6</td><!-- PCIE -->
 			<td>1 MRMAC + 5 DCMAC</td><!-- Ethernet MAC -->
-			<td>-</td><!-- Interlaken -->
 			<td>1</td><!-- HSC -->
 			<td>-</td><!-- AI Engine -->
 			<td>-</td><!-- Other -->
+			<td>-</td>
+		</tr>
+        <tr>
+			<td>XC2VP3422</td><!-- SKU -->
+			<td>Versal AI Premium Gen 2</td>
+			<td>146352</td><!-- SLICE -->
+			<td>1170816</td><!-- LUT (SLICE*8) -->
+			<td>2230</td><!-- BRAM -->
+			<td>504</td><!-- URAM -->
+			<td>6080</td><!-- DSP -->
+			<td>8</td><!-- DDRMC -->
+			<td>736</td><!-- X5IO -->
+			<td>0</td><!-- HDIO -->
+			<td>40</td><!-- NoC M/S ports -->
+			<td>40+16 GTM2</td><!-- Transceivers -->
+			<td>2 Gen6</td><!-- PCIE -->
+			<td>1 MRMAC + 3 DCMAC</td><!-- Ethernet MAC -->
+			<td>1</td><!-- HSC -->
+			<td>-</td><!-- AI Engine -->
+			<td>32GB On-Package LPDDR5X</td><!-- Other -->
+			<td>-</td>
+		</tr>
+		<tr>
+			<td>XC2VP3522</td><!-- SKU -->
+			<td>Versal AI Premium Gen 2</td>
+			<td>187056</td><!-- SLICE -->
+			<td>1496448</td><!-- LUT (SLICE*8) -->
+			<td>2806</td><!-- BRAM -->
+			<td>648</td><!-- URAM -->
+			<td>2856</td><!-- DSP -->
+			<td>8</td><!-- DDRMC -->
+			<td>736</td><!-- X5IO -->
+			<td>0</td><!-- HDIO -->
+			<td>40</td><!-- NoC M/S ports -->
+			<td>56+16 GTM2</td><!-- Transceivers -->
+			<td>2 Gen6</td><!-- PCIE -->
+			<td>1 MRMAC + 5 DCMAC</td><!-- Ethernet MAC -->
+			<td>1</td><!-- HSC -->
+			<td>-</td><!-- AI Engine -->
+			<td>32GB On-Package LPDDR5X</td><!-- Other -->
+			<td>-</td>
+		</tr>
+		<tr>
+			<td>XC2VP3622</td><!-- SKU -->
+			<td>Versal AI Premium Gen 2</td>
+			<td>187056</td><!-- SLICE -->
+			<td>1496448</td><!-- LUT (SLICE*8) -->
+			<td>2806</td><!-- BRAM -->
+			<td>648</td><!-- URAM -->
+			<td>7616</td><!-- DSP -->
+			<td>8</td><!-- DDRMC -->
+			<td>736</td><!-- X5IO -->
+			<td>0</td><!-- HDIO -->
+			<td>40</td><!-- NoC M/S ports -->
+			<td>56+16 GTM2</td><!-- Transceivers -->
+			<td>2 Gen6</td><!-- PCIE -->
+			<td>1 MRMAC + 5 DCMAC</td><!-- Ethernet MAC -->
+			<td>1</td><!-- HSC -->
+			<td>-</td><!-- AI Engine -->
+			<td>32GB On-Package LPDDR5X</td><!-- Other -->
 			<td>-</td>
 		</tr>
 	</tbody>
@@ -1297,9 +1344,6 @@ The RF series deivces currently have no support for HSC (high speed crypto) bloc
 			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">
 				Ethernet MACs
 			</th>
-			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">
-				Interlaken blocks
-			</th>
 			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">HSC blocks
 			</th>
 			<th class=headerSort tabindex=0 role="columnheader button" title="Sort ascending">AI Engines
@@ -1333,7 +1377,6 @@ The RF series deivces currently have no support for HSC (high speed crypto) bloc
 			<td rowspan=2>12 GTYP + 8 GTM</td><!-- Transceivers -->
 			<td rowspan=2>1 Gen5</td><!-- PCIE -->
 			<td rowspan=2>2 MRMAC</td><!-- Ethernet MAC -->
-			<td rowspan=2>-</td><!-- Interlaken -->
 			<td rowspan=2>-</td><!-- HSC -->
 			<td rowspan=2>126</td><!-- AI Engine -->
 			<td rowspan=2>32 Mb</td><!-- AI Engine Memory -->
@@ -1362,7 +1405,6 @@ The RF series deivces currently have no support for HSC (high speed crypto) bloc
 			<td rowspan=2>20 GTM2</td><!-- Transceivers -->
 			<td rowspan=2>1 Gen5</td><!-- PCIE -->
 			<td rowspan=2>2 MRMAC + 3 DCMAC</td><!-- Ethernet MAC -->
-			<td rowspan=2>-</td><!-- Interlaken -->
 			<td rowspan=2>-</td><!-- HSC -->
 			<td rowspan=2>120</td><!-- AI Engine -->
 			<td rowspan=2>30 Mb</td><!-- AI Engine Memory -->
