@@ -8,40 +8,32 @@ The credit goes to the origial authors of https://en.wikipedia.org/wiki/List_of_
 Contents
 --------
 
-- [List of Xilinx FPGAs](#list-of-xilinx-fpgas)
-  - [Contents](#contents)
-- [Terminology](#terminology)
-  - [Model naming](#model-naming)
-- [Series overview](#series-overview)
-- [Early FPGA devices](#early-fpga-devices)
-  - [XC2000](#xc2000)
-  - [XC3000](#xc3000)
-  - [XC4000, Spartan](#xc4000-spartan)
-  - [XC5200](#xc5200)
-  - [XC6200](#xc6200)
-  - [XC8100](#xc8100)
-- [Virtex, Spartan-II](#virtex-spartan-ii)
-- [Virtex-II](#virtex-ii)
-- [Spartan-3](#spartan-3)
-- [Virtex-4](#virtex-4)
-- [Virtex-5](#virtex-5)
-- [Virtex-6](#virtex-6)
-- [Spartan-6](#spartan-6)
-- [7 Series](#7-series)
-- [UltraScale](#ultrascale)
-- [UltraScale-plus](#ultrascale-plus)
-  - [Artix, Kintex, Spartan, and Virtex UltraScale+ family](#artix-kintex-spartan-and-virtex-ultrascale-family)
-  - [Zynq UltraScale+ Family](#zynq-ultrascale-family)
-- [UltraScale-plus Gen 2](#ultrascale-plus-gen-2)
-  - [Kintex UltraScale+ Gen 2](#kintex-ultrascale-gen-2)
-- [Versal](#versal)
-  - [Versal Gen 2](#versal-gen-2)
-  - [Versal RF Series](#versal-rf-series)
-- [Alveo and Kria](#alveo-and-kria)
-- [FPGAs without integrated CPUs \[86\]](#fpgas-without-integrated-cpus-86)
-  - [Artix](#artix)
-  - [Kintex](#kintex)
-- [References](#references)
+*   [1 Terminology](#Terminology)
+    *   [1.1 Model naming](#Model-naming)
+*   [2 Series overview](#Series-overview)
+*   [3 Early FPGA devices](#Early-FPGA-Devices)
+    *   [3.1 XC2000](#XC2000)
+    *   [3.2 XC3000](#XC3000)
+    *   [3.3 XC4000, Spartan](#XC4000-Spartan)
+    *   [3.4 XC5200](#XC5200)
+    *   [3.5 XC6200](#XC6200)
+    *   [3.6 XC8100](#XC8100)
+*   [4 Virtex, Spartan-II](#Virtex-Spartan-II)
+*   [5 Virtex-II](#Virtex-II)
+*   [6 Spartan-3](#Spartan-3)
+*   [7 Virtex-4](#Virtex-4)
+*   [8 Virtex-5](#Virtex-5)
+*   [9 Virtex-6](#Virtex-6)
+*   [10 Spartan-6](#Spartan-6)
+*   [11 7 Series](#7-Series)
+*   [12 UltraScale](#UltraScale) <!-- github does not like "+" in link for some reason -->
+*   [13 UltraScale+](#UltraScale-plus)
+*   [14 Versal](#Versal)
+*   [15 Alveo and Kria](#Alveo-and-Kria)
+*   [16 FPGAs without integrated CPUs\[86\]](#FPGAs-without-integrated-CPUs-86)
+    *   [16.1 Artix](#Artix)
+    *   [16.2 Kintex](#Kintex)
+*   [17 References](#References)
 
 # Terminology
 
@@ -8434,7 +8426,7 @@ In addition to standalone FPGA chips, Xilinx also offers the Alveo product line 
 		<tr>
 			<td>Alveo U50<sup id=cite_ref-82 class=reference><a href=#cite_note-82>[82]</a></sup>
 			</td>
-			<td rowspan=4>Data center accelerator card
+			<td rowspan=5>Data center accelerator card
 			</td>
 			<td>XCU50
 			</td>
@@ -8460,7 +8452,7 @@ In addition to standalone FPGA chips, Xilinx also offers the Alveo product line 
 			</td>
 			<td>XCVU9P
 			</td>
-			<td rowspan=3>PCI Express ×16 full height, full or ¾ length, dual slot
+			<td rowspan=4>PCI Express ×16 full height, full or ¾ length, dual slot
 			</td>
 			<td rowspan=2>
 				<ul>
@@ -8496,6 +8488,27 @@ In addition to standalone FPGA chips, Xilinx also offers the Alveo product line 
 					<li>2×QSFP28 100 Gigabit Ethernet</li>
 					<li>Configuration flash</li>
 					<li>Satellite controller</li>
+					<li><a href=https://en.wikipedia.org/wiki/Micro_USB class=mw-redirect
+							title="Micro USB">Micro USB</a> port for configuration
+				</ul>
+		</tr>
+        <tr>
+			<td>Alveo V80
+			</td>
+			<td>XCV80
+			</td>
+			<td>XCVH1782
+			</td>
+			<td>
+				<ul>
+					<li>PCI Express Gen 4 ×16 or Gen 5 ×8 interface to FPGA</li>
+					<li>32GB of <a href=https://en.wikipedia.org/wiki/High_Bandwidth_Memory
+							title="High Bandwidth Memory">HBM2e</a> RAM (on FPGA)</li>
+					<li>1× DDR4 DIMM socket with 32GB RAM preinstalled</li>
+                    <li>4GB DDR4 RAM onboard for Arm processor</li>
+					<li>4×QSFP56 200 Gigabit Ethernet</li>
+					<li>Configuration flash</li>
+					<li>1x MCIOx8 and 2x MCIOx4 PCIe5 ports</li>
 					<li><a href=https://en.wikipedia.org/wiki/Micro_USB class=mw-redirect
 							title="Micro USB">Micro USB</a> port for configuration
 				</ul>

@@ -125,7 +125,7 @@ In addition to standalone FPGA chips, Xilinx also offers the Alveo product line 
 		<tr>
 			<td>Alveo U50<sup id=cite_ref-82 class=reference><a href=#cite_note-82>[82]</a></sup>
 			</td>
-			<td rowspan=4>Data center accelerator card
+			<td rowspan=5>Data center accelerator card
 			</td>
 			<td>XCU50
 			</td>
@@ -151,7 +151,7 @@ In addition to standalone FPGA chips, Xilinx also offers the Alveo product line 
 			</td>
 			<td>XCVU9P
 			</td>
-			<td rowspan=3>PCI Express ×16 full height, full or ¾ length, dual slot
+			<td rowspan=4>PCI Express ×16 full height, full or ¾ length, dual slot
 			</td>
 			<td rowspan=2>
 				<ul>
@@ -187,6 +187,27 @@ In addition to standalone FPGA chips, Xilinx also offers the Alveo product line 
 					<li>2×QSFP28 100 Gigabit Ethernet</li>
 					<li>Configuration flash</li>
 					<li>Satellite controller</li>
+					<li><a href=https://en.wikipedia.org/wiki/Micro_USB class=mw-redirect
+							title="Micro USB">Micro USB</a> port for configuration
+				</ul>
+		</tr>
+        <tr>
+			<td>Alveo V80
+			</td>
+			<td>XCV80
+			</td>
+			<td>XCVH1782
+			</td>
+			<td>
+				<ul>
+					<li>PCI Express Gen 4 ×16 or Gen 5 ×8 interface to FPGA</li>
+					<li>32GB of <a href=https://en.wikipedia.org/wiki/High_Bandwidth_Memory
+							title="High Bandwidth Memory">HBM2e</a> RAM (on FPGA)</li>
+					<li>1× DDR4 DIMM socket with 32GB RAM preinstalled</li>
+                    <li>4GB DDR4 RAM onboard for Arm processor</li>
+					<li>4×QSFP56 200 Gigabit Ethernet</li>
+					<li>Configuration flash</li>
+					<li>1x MCIOx8 and 2x MCIOx4 PCIe5 ports</li>
 					<li><a href=https://en.wikipedia.org/wiki/Micro_USB class=mw-redirect
 							title="Micro USB">Micro USB</a> port for configuration
 				</ul>
